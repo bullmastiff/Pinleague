@@ -1,42 +1,11 @@
-#Seawolf
-A boilerplate for projects using as many buzzwords as possible. Just kidding, but seriously.
+#Pinleague
+Redesign for Pinleague to help me understand it better
 
-##What's Inside?!
+##Requirements
+Node ~0.8
+Grunt ~0.4
+Compass 3 + Foundation framework
 
-Eventually going to attempt to match the back + front since they are both js. It's a work in progress.
-
-###Back-end
-* Node.js
-* Express.js
-* Handlebars.js
-* MongoDB (mongoose)
-
-###Front-end
-* Backbone.js
-* Marionette.js
-* Handlebars.js
-* SASS
-* Foundation
-* Compass
-
-###Deployment
-* Grunt.js
-* Heroku
-* JSLint
-
-
-##Installation
-lol, not there yet BUT
-
-clone the repo
-
-
-install node
-install grunt.js
-install compass
-install foundation
-
-npm install
-run grunt watch
-
-deploy
+##See it live!
+For now, clone the repo and run node app/server.js. I'll throw it on heroku
+later if that helps.
