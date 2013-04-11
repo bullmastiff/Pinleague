@@ -48,6 +48,8 @@ $nav-pop:#EDB2B2;
     h1 + h2 {
         color:#444444;
         font-size:emCalc(16px);
+        font-size:emCalc(18px);
+        margin-bottom:25px;
     }
 
     h1 {
@@ -62,6 +64,18 @@ $nav-pop:#EDB2B2;
         display:inline-block;
     }
 
+    .email-wrap {
+        overflow:hidden;
+        position:relative;
+        input {
+            @include box-sizing(border-box);
+        }
+    }
+
+    input[type="submit"] {
+        margin-left:5px;
+        float:right;
+    }
 
     .row:after {
         content:"";
@@ -84,4 +98,13 @@ $nav-pop:#EDB2B2;
     width:232px;
     height:53px;
     background-position:-10px -10px;
+}
+
+input[type="submit"], button, a.button {
+    color:#FFF;
+    @include background-image(linear-gradient($secondary,$secondary-dark)); 
+    border:none;
+    @include box-sizing(border-box);
+    padding:5px 30px;
+    height:30px;
 }
