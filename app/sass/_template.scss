@@ -47,7 +47,6 @@ $nav-pop:#EDB2B2;
 
     h1 + h2 {
         color:#444444;
-        font-size:emCalc(16px);
         font-size:emCalc(18px);
         margin-bottom:25px;
     }
@@ -90,6 +89,48 @@ $nav-pop:#EDB2B2;
     } 
 }
 
+#what-we-do {
+    margin-top:70px;
+
+    li {
+
+        h3,i,p {
+            color:$muted;
+        }
+
+        h3 {
+            @include clearfix();
+            font-weight:300;
+            font-size:emCalc(20px);
+        }
+
+        i {
+            font-size:emCalc(30px);
+            vertical-align:middle;
+            display:inline-block;
+            margin-right:10px;
+        }
+
+        p {
+            font-size:emCalc(14px);
+        }
+    }
+
+    li.active {
+        i {
+            color:$color-pop;
+        }
+        h3,p {
+            color:$font;
+        }
+
+    }
+
+}
+
+
+
+/* Coke */
 .coke{
     background:url("/img/coke.png") top left no-repeat; 
 }
