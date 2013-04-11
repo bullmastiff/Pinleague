@@ -37,6 +37,24 @@ $nav-pop:#EDB2B2;
 
 #hero {
     background:$low-light;
+    color:$font;
+
+    h1,h2 {
+        text-align:center;
+        font-weight:300;
+    }
+
+    h1 + h2 {
+        color:#444444;
+        font-size:emCalc(16px);
+    }
+
+    .pinterest-logo {
+        text-indent:-900px;
+        overflow:hidden;
+        display:inline-block;
+    }
+
 
     .row:after {
         content:"";
@@ -49,4 +67,14 @@ $nav-pop:#EDB2B2;
         position:relative;
         bottom:-20px;
     } 
+}
+
+.coke{
+    background:url("/img/coke.png") top left no-repeat; 
+}
+
+.pinterest-logo{ 
+    width:232px;
+    height:53px;
+    background-position:-10px -10px;
 }
