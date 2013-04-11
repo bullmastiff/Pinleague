@@ -1,0 +1,52 @@
+/*Color Scheme */
+$primary:#A22929;
+$secondary:#659DFA;
+$secondary-dark:#4D77BC;
+$color-pop:#4FBD8C;
+
+$font:#373737;
+$muted:#989898;
+
+$main:#FFF;
+$low-light:#E9E6E3;
+
+$nav: #D85656;
+$nav-dark:#9B2323;
+$nav-pop:#EDB2B2;
+
+
+#navigation {
+    border-top:2px solid $nav-pop;
+    @include background-image(linear-gradient($nav,$nav-dark 70%, $nav-dark)); 
+
+    color:#FFF;
+    padding:8px 0;
+
+    object {
+        height:34px;
+    }
+
+    a { 
+        font-size:emCalc(14px);
+        color:#FFF;
+        text-decoration:none;
+    }
+
+
+}
+
+#hero {
+    background:$low-light;
+
+    .row:after {
+        content:"";
+
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $low-light;
+        position:relative;
+        bottom:-20px;
+    } 
+}
