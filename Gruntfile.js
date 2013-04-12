@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         },
         pkg: grunt.file.readJSON('package.json'),
         compass: {
-        	dist: {
+            dist: {
 				options: {
 					config  : 'app/etc/config.rb',
 					sassDir : '<%= project.sass_src %>',
