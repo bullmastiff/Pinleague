@@ -130,7 +130,12 @@ $nav-pop:#EDB2B2;
 }
 
 #who-we-help {
-
+    h3 {
+        color:$primary;
+        @include clearfix();
+        font-weight:300;
+        font-size:emCalc(20px);
+    }
     padding:20px;
 
     li {
