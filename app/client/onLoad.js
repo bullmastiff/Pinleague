@@ -1,11 +1,7 @@
 var app = app || {};
 
-app.highlight = function(previous) {
-
-    $('#what-we-do ul li.active').removeClass('active');
-    previous.next('li').addClass('active');
-
-};
+//Config
+app.intervalLength = 3500;
 
 app.scrollWhatWeDo = function() {
 
@@ -17,7 +13,9 @@ app.scrollWhatWeDo = function() {
         next = $('#what-we-do ul li:first');
 
     } else {
-        next       = active.next('li');
+
+        next = active.next('li');
+
     }
 
     active.removeClass('active');
@@ -27,6 +25,17 @@ app.scrollWhatWeDo = function() {
 
 $(document).ready(function() {
 
-        setInterval(app.scrollWhatWeDo,3000);
+        app.interval = setInterval(app.scrollWhatWeDo,app.intervalLength);
+
+        $('#what-we-do ul li').hover(function() {
+
+            $('#what-we-do ul li.active').removeClass('active');
+            $(this).addClass('active');
+
+            clearInterval(app.interval);
+
+        }, function() {
+            app.interval = setInterval(app.scrollWhatWeDo,app.intervalLength);
+        });
 
 });
